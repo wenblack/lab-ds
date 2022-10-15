@@ -15,6 +15,11 @@ export default {
       control: {
         type: 'inline-radio'
       }
+    },
+    asChild: {
+      table: {
+        disable: true
+      }
     }
   }
 } as Meta<TextProps>
@@ -25,7 +30,12 @@ export const Small: StoryObj<TextProps> = {
   args: {
     children: 'Small Text',
     size: 'sm'
-
+  }, argTypes: {
+    asChild: {
+      table: {
+        disable: true
+      }
+    }
   }
 }
 
@@ -34,6 +44,12 @@ export const Large: StoryObj<TextProps> = {
   args: {
     children: 'Large Text',
     size: 'lg'
+  }, argTypes: {
+    asChild: {
+      table: {
+        disable: true
+      }
+    }
   }
 }
 
